@@ -1,11 +1,11 @@
 Summary:	MATE window manager
 Name:		marco
-Version:	1.8.0
+Version:	1.8.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Window Managers
 Source0:	http://pub.mate-desktop.org/releases/1.8/%{name}-%{version}.tar.xz
-# Source0-md5:	312ede7dfda2cbdf8d27300f2c789bd4
+# Source0-md5:	265dc15c523a4688de0e10eb976df751
 Source1:	http://art.gnome.org/download/themes/metacity/1148/MCity-Simplebox.tar.gz
 # Source1-md5:	033c5509bb4c573001fb7fef490f8bff
 Patch0:		%{name}-freddix.patch
@@ -86,7 +86,6 @@ cp -ar Simplebox $RPM_BUILD_ROOT%{_datadir}/themes
 
 %{__rm} $RPM_BUILD_ROOT%{_datadir}/MateConf/gsettings/*.convert
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
-%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/{ca@valencia,en@shaw,ha,ig,la}
 
 %find_lang marco --with-mate
 
